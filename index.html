@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth hydrated">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dist/img/favicon.webp" type="image/x-icon">
+    <title>Sweetology - Home of Mile Crepe Cake's</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body class="bg-slate-100">
+    <!-- Navbar -->
+    <nav class="bg-slate-100 border-gray-200 p-5 my-2 lg:my-0 py-2.5 rounded dark:bg-gray-900">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="/" class="flex items-center">
+                <img src="dist/img/favicon.webp" class="justify-center items-center mb-1 mx-2" width="30" height="30"
+                    alt="Flowbite Logo" />
+                <span class="self-center text-xl font-bold whitespace-nowrap  font-satisfy">Sweetology</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button"
+                    class="text-white bg-primary hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:hover:bg-primary dark:focus:ring-pink-800">Contact
+                    Person</button>
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200   dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul
+                    class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-slate-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li><a href="#home"
+                            class="block py-2 pl-3 pr-4 text-white bg-pink-500 rounded md:bg-transparent md:text-pink-600 font-semibold md:p-0 "
+                            aria-current="page">Home</a></li>
+                    <li><a href="#about"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-white   dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About
+                            Sweetology</a>
+                    </li>
+                    <li><a href="#product"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-white   dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Product</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero -->
+    <section class="flex flex-wrap justify-center items-center pt-32 pb-48 px-10 lg:px-0" id="home">
+        <div class="container max-w-xl mx-auto rounded-xl">
+            <h1 class="w-full flex flex-wrap justify-start items-start max-w-xl text-7xl font-bold leading-none">Mile
+                Crepes Cake Store</h1>
+            <h5 class="w-full flex flex-wrap justify-start items-start max-w-lg font-semibold text-lg">by Alfira Nada
+                Aulia Bachri✨</h5>
+            <h5 class="w-full flex flex-wrap justify-start items-start max-w-lg font-normal text-lg">A place where you
+                find incomparable pleasure, perfect sweetness, and maximum satisfaction.</h5>
+            <h5 class="w-full flex flex-wrap justify-start items-start max-w-lg my-2 font-normal text-lg">Find
+                Sweetology at :</h5>
+            <div class="flex">
+                <div class="flex justify-center items-center bg-pink-200 shadow-xl w-10 h-10 rounded-lg mr-3">
+                    <?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M34 6H14C9.58172 6 6 9.58172 6 14V34C6 38.4183 9.58172 42 14 42H34C38.4183 42 42 38.4183 42 34V14C42 9.58172 38.4183 6 34 6Z"
+                            fill="none" stroke="#ce378a" stroke-width="4" stroke-linejoin="round" />
+                        <path
+                            d="M24 32C28.4183 32 32 28.4183 32 24C32 19.5817 28.4183 16 24 16C19.5817 16 16 19.5817 16 24C16 28.4183 19.5817 32 24 32Z"
+                            fill="none" stroke="#ce378a" stroke-width="4" stroke-linejoin="round" />
+                        <path
+                            d="M35 15C36.1046 15 37 14.1046 37 13C37 11.8954 36.1046 11 35 11C33.8954 11 33 11.8954 33 13C33 14.1046 33.8954 15 35 15Z"
+                            fill="#ce378a" />
+                    </svg>
+                </div>
+                <div class="flex justify-center items-center bg-pink-200 shadow-xl w-10 h-10 rounded-lg mr-3">
+                    <?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="12" width="28" height="30" rx="3" fill="none" stroke="#ce378a" stroke-width="4"
+                            stroke-linejoin="round" />
+                        <path d="M30 18V10C30 6.68629 27.3137 4 24 4V4C20.6863 4 18 6.68629 18 10V18" stroke="#ce378a"
+                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="flex justify-center items-center bg-pink-200 shadow-xl w-10 h-10 rounded-lg mr-3">
+                    <span class="text-xs text-center font-bold text-[#ce378a] leading-none">Grab</span>
+                </div>
+            </div>
+        </div>
+        <div class="container max-w-xl mx-auto rounded-xl">
+            <img src="dist/img/pancake.webp" width="500"
+                height="500" alt="sweet-crepes">
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- About -->
+    <section class="flex flex-wrap justify-center items-center md:pt-32 pb-48 px-5 lg:px-0" id="about">
+        <div class="container mx-auto rounded-xl">
+            <div class="mx-auto text-center px-4 mt-12 text-3xl md:text-7xl font-semibold">5W + 1H Questions About
+                Sweetology</div>
+            <dl class="mt-8 mx-auto max-w-screen-sm lg:max-w-screen-lg flex flex-col lg:flex-row lg:flex-wrap">
+                <div class="w-full">
+                    <!-- What -->
+                    <div
+                        class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 mt-5 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between w-full">
+                                <div class="font-semibold">
+                                    What is Sweetology?
+                                </div>
+                                <div>
+                                    <svg fill=currentColor
+                                        class="question-chevron group-hover:bg-primary h-5 block text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="9.29289322 12.9497475 10 13.6568542 15.6568542 8 14.2426407 6.58578644 10 10.8284271 5.75735931 6.58578644 4.34314575 8">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <svg fill=currentColor
+                                        class="question-chevron hidden group-hover:bg-primary h-5 text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="10.7071068 7.05025253 10 6.34314575 4.34314575 12 5.75735931 13.4142136 10 9.17157288 14.2426407 13.4142136 15.6568542 12">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-2 leading-snug text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis laboriosam ipsam
+                            optio. Sit minus ratione accusantium perferendis optio earum voluptatum laudantium alias!
+                            Eos consequatur quis doloribus harum, repudiandae neque beatae sequi corporis magni quod
+                            possimus minus. Exercitationem, quos incidunt et eius asperiores, consequuntur officia harum
+                            voluptatum, repellat accusantium delectus.
+                        </dd>
+                    </div>
+                    <!-- Who -->
+                    <div
+                        class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 mt-5 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between w-full">
+                                <div class="font-semibold">
+                                    Who is the founder of Sweetology?
+                                </div>
+                                <div>
+                                    <svg fill=currentColor
+                                        class="question-chevron group-hover:bg-primary h-5 block text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="9.29289322 12.9497475 10 13.6568542 15.6568542 8 14.2426407 6.58578644 10 10.8284271 5.75735931 6.58578644 4.34314575 8">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <svg fill=currentColor
+                                        class="question-chevron hidden group-hover:bg-primary h-5 text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="10.7071068 7.05025253 10 6.34314575 4.34314575 12 5.75735931 13.4142136 10 9.17157288 14.2426407 13.4142136 15.6568542 12">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-2 leading-snug text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis laboriosam ipsam
+                            optio. Sit minus ratione accusantium perferendis optio earum voluptatum laudantium alias!
+                            Eos consequatur quis doloribus harum, repudiandae neque beatae sequi corporis magni quod
+                            possimus minus. Exercitationem, quos incidunt et eius asperiores, consequuntur officia harum
+                            voluptatum, repellat accusantium delectus.
+                        </dd>
+                    </div>
+                    <!-- Where -->
+                    <div
+                        class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between w-full">
+                                <div class="font-semibold">
+                                    Where i can find Sweetology?
+                                </div>
+                                <div>
+                                    <svg fill=currentColor
+                                        class="question-chevron group-hover:bg-primary h-5 block text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="9.29289322 12.9497475 10 13.6568542 15.6568542 8 14.2426407 6.58578644 10 10.8284271 5.75735931 6.58578644 4.34314575 8">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <svg fill=currentColor
+                                        class="question-chevron hidden group-hover:bg-primary h-5 text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="10.7071068 7.05025253 10 6.34314575 4.34314575 12 5.75735931 13.4142136 10 9.17157288 14.2426407 13.4142136 15.6568542 12">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-2 leading-snug text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis laboriosam ipsam
+                            optio. Sit minus ratione accusantium perferendis optio earum voluptatum laudantium alias!
+                            Eos consequatur quis doloribus harum, repudiandae neque beatae sequi corporis magni quod
+                            possimus minus. Exercitationem, quos incidunt et eius asperiores, consequuntur officia harum
+                            voluptatum, repellat accusantium delectus.
+                        </dd>
+                    </div>
+                    <!-- When -->
+                    <div
+                        class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between w-full">
+                                <div class="font-semibold">
+                                    When is Sweetology open?
+                                </div>
+                                <div>
+                                    <svg fill=currentColor
+                                        class="question-chevron group-hover:bg-primary h-5 block text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="9.29289322 12.9497475 10 13.6568542 15.6568542 8 14.2426407 6.58578644 10 10.8284271 5.75735931 6.58578644 4.34314575 8">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <svg fill=currentColor
+                                        class="question-chevron hidden group-hover:bg-primary h-5 text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="10.7071068 7.05025253 10 6.34314575 4.34314575 12 5.75735931 13.4142136 10 9.17157288 14.2426407 13.4142136 15.6568542 12">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-2 leading-snug text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis laboriosam ipsam
+                            optio. Sit minus ratione accusantium perferendis optio earum voluptatum laudantium alias!
+                            Eos consequatur quis doloribus harum, repudiandae neque beatae sequi corporis magni quod
+                            possimus minus. Exercitationem, quos incidunt et eius asperiores, consequuntur officia harum
+                            voluptatum, repellat accusantium delectus.
+                        </dd>
+                    </div>
+                    <!-- Why -->
+                    <div
+                        class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between w-full">
+                                <div class="font-semibold">
+                                    Why do we have to buy Sweetology cake?
+                                </div>
+                                <div>
+                                    <svg fill=currentColor
+                                        class="question-chevron group-hover:bg-primary h-5 block text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="9.29289322 12.9497475 10 13.6568542 15.6568542 8 14.2426407 6.58578644 10 10.8284271 5.75735931 6.58578644 4.34314575 8">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <svg fill=currentColor
+                                        class="question-chevron hidden group-hover:bg-primary h-5 text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="10.7071068 7.05025253 10 6.34314575 4.34314575 12 5.75735931 13.4142136 10 9.17157288 14.2426407 13.4142136 15.6568542 12">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-2 leading-snug text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis laboriosam ipsam
+                            optio. Sit minus ratione accusantium perferendis optio earum voluptatum laudantium alias!
+                            Eos consequatur quis doloribus harum, repudiandae neque beatae sequi corporis magni quod
+                            possimus minus. Exercitationem, quos incidunt et eius asperiores, consequuntur officia harum
+                            voluptatum, repellat accusantium delectus.
+                        </dd>
+                    </div>
+                    <!-- How -->
+                    <div
+                        class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between w-full">
+                                <div class="font-semibold">
+                                    How to buy Sweetology product?
+                                </div>
+                                <div>
+                                    <svg fill=currentColor
+                                        class="question-chevron group-hover:bg-primary h-5 block text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="9.29289322 12.9497475 10 13.6568542 15.6568542 8 14.2426407 6.58578644 10 10.8284271 5.75735931 6.58578644 4.34314575 8">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <svg fill=currentColor
+                                        class="question-chevron hidden group-hover:bg-primary h-5 text-white bg-pink-500 rounded-full p-1"
+                                        viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="currentColor" stroke-width="1" fill=currentColor fill-rule="evenodd">
+                                            <g>
+                                                <polygon
+                                                    points="10.7071068 7.05025253 10 6.34314575 4.34314575 12 5.75735931 13.4142136 10 9.17157288 14.2426407 13.4142136 15.6568542 12">
+                                                </polygon>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-2 leading-snug text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis laboriosam ipsam
+                            optio. Sit minus ratione accusantium perferendis optio earum voluptatum laudantium alias!
+                            Eos consequatur quis doloribus harum, repudiandae neque beatae sequi corporis magni quod
+                            possimus minus. Exercitationem, quos incidunt et eius asperiores, consequuntur officia harum
+                            voluptatum, repellat accusantium delectus.
+                        </dd>
+                    </div>
+                </div>
+            </dl>
+            <div class="mx-auto text-center px-4 mt-12 text-4xl font-bold my-5">Testimonial</div>
+            <div style="--swiper-navigation-color: #be185d; --swiper-pagination-color: #be185d"
+                class="swiper mySwiper px-10">
+                <div class="swiper-wrapper w-full h-96">
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <div class="max-w-screen-xl px-4 mx-auto text-center lg:px-6">
+                                <figure class="max-w-screen-md mx-auto">
+                                    <svg class="h-12 mx-auto  text-gray-400 dark:text-gray-600" viewBox="0 0 24 27"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    <blockquote>
+                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"Lorem, ipsum dolor
+                                            sit
+                                            amet consectetur adipisicing elit. Aspernatur, assumenda! Quis dolores
+                                            molestias esse ipsum, recusandae, non doloremque, dolorem rerum aliquid
+                                            quasi sapiente? Praesentium, nobis ipsa commodi delectus voluptate veniam."
+                                        </p>
+                                    </blockquote>
+                                    <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                        <img class="w-6 h-6 rounded-full"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                            alt="profile picture">
+                                        <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                            <div class="pr-3 text-sm font-bold">Micheal Gough
+                                            </div>
+                                            <div class="pl-3 text-sm font-light text-gray-500">CEO at
+                                                Google</div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <div class="max-w-screen-xl px-4 mx-auto text-center lg:px-6">
+                                <figure class="max-w-screen-md mx-auto">
+                                    <svg class="h-12 mx-auto  text-gray-400 dark:text-gray-600" viewBox="0 0 24 27"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    <blockquote>
+                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"Lorem, ipsum dolor
+                                            sit
+                                            amet consectetur adipisicing elit. Aspernatur, assumenda! Quis dolores
+                                            molestias esse ipsum, recusandae, non doloremque, dolorem rerum aliquid
+                                            quasi sapiente? Praesentium, nobis ipsa commodi delectus voluptate veniam."
+                                        </p>
+                                    </blockquote>
+                                    <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                        <img class="w-6 h-6 rounded-full"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                            alt="profile picture">
+                                        <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                            <div class="pr-3 text-sm font-bold">Micheal Gough
+                                            </div>
+                                            <div class="pl-3 text-sm font-light text-gray-500">CEO at
+                                                Google</div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <div class="max-w-screen-xl px-4 mx-auto text-center lg:px-6">
+                                <figure class="max-w-screen-md mx-auto">
+                                    <svg class="h-12 mx-auto  text-gray-400 dark:text-gray-600" viewBox="0 0 24 27"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    <blockquote>
+                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"Lorem, ipsum dolor
+                                            sit
+                                            amet consectetur adipisicing elit. Aspernatur, assumenda! Quis dolores
+                                            molestias esse ipsum, recusandae, non doloremque, dolorem rerum aliquid
+                                            quasi sapiente? Praesentium, nobis ipsa commodi delectus voluptate veniam."
+                                        </p>
+                                    </blockquote>
+                                    <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                        <img class="w-6 h-6 rounded-full"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                            alt="profile picture">
+                                        <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                            <div class="pr-3 text-sm font-bold">Micheal Gough
+                                            </div>
+                                            <div class="pl-3 text-sm font-light text-gray-500">CEO at
+                                                Google</div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <div class="max-w-screen-xl px-4 mx-auto text-center lg:px-6">
+                                <figure class="max-w-screen-md mx-auto">
+                                    <svg class="h-12 mx-auto  text-gray-400 dark:text-gray-600" viewBox="0 0 24 27"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    <blockquote>
+                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"Lorem, ipsum dolor
+                                            sit
+                                            amet consectetur adipisicing elit. Aspernatur, assumenda! Quis dolores
+                                            molestias esse ipsum, recusandae, non doloremque, dolorem rerum aliquid
+                                            quasi sapiente? Praesentium, nobis ipsa commodi delectus voluptate veniam."
+                                        </p>
+                                    </blockquote>
+                                    <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                        <img class="w-6 h-6 rounded-full"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                            alt="profile picture">
+                                        <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                            <div class="pr-3 text-sm font-bold">Micheal Gough
+                                            </div>
+                                            <div class="pl-3 text-sm font-light text-gray-500">CEO at
+                                                Google</div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <div class="max-w-screen-xl px-4 mx-auto text-center lg:px-6">
+                                <figure class="max-w-screen-md mx-auto">
+                                    <svg class="h-12 mx-auto  text-gray-400 dark:text-gray-600" viewBox="0 0 24 27"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    <blockquote>
+                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"Lorem, ipsum dolor
+                                            sit
+                                            amet consectetur adipisicing elit. Aspernatur, assumenda! Quis dolores
+                                            molestias esse ipsum, recusandae, non doloremque, dolorem rerum aliquid
+                                            quasi sapiente? Praesentium, nobis ipsa commodi delectus voluptate veniam."
+                                        </p>
+                                    </blockquote>
+                                    <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                        <img class="w-6 h-6 rounded-full"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                            alt="profile picture">
+                                        <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                            <div class="pr-3 text-sm font-bold">Micheal Gough
+                                            </div>
+                                            <div class="pl-3 text-sm font-light text-gray-500">CEO at
+                                                Google</div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next text-primary"></div>
+                <div class="swiper-button-prev text-primary"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+
+    <!-- JS -->
+    <script src="dist/js/script.js"></script>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script>
+        $('.question-and-answer').click(function () {
+            $(this).find(".answer").toggleClass("hidden")
+            $(this).find(".question-chevron").toggleClass("hidden")
+        })
+    </script>
+</body>
+
+</html>

@@ -56,10 +56,10 @@ project on a live system.
 
 ```bash
     # Clone the repository
-    $ git clone https://github.com/aautoruns/galihazellaa
+    $ git clone https://github.com/aautoruns/sweetology
 
     # Move into the repository
-    $ cd galihazellaa
+    $ cd sweetology
 
     # Remove the current origin repository
     $ git remote remove origin
@@ -71,8 +71,8 @@ After that, install all Node package for this project
     # Install Tailwind Module
     $ npm install -D tailwindcss
 
-    # Install Typed Module
-    $ npm install typed.js
+    # Install Swiper Module
+    $ npm install swiper
 
     # Install Flowbites Module
     $ npm i flowbite

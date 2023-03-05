@@ -25,9 +25,9 @@
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
-<body class="bg-slate-100">
+<body>
     <!-- Navbar -->
-    <nav class="bg-slate-100 border-gray-200 p-5 my-2 lg:my-0 py-2.5 rounded dark:bg-gray-900">
+    <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="/" class="flex items-center">
                 <img src="dist/img/favicon.webp" class="justify-center items-center mb-1 mx-2" width="30" height="30"
@@ -35,34 +35,44 @@
                 <span class="self-center text-xl font-bold whitespace-nowrap  font-satisfy">Sweetology</span>
             </a>
             <div class="flex md:order-2">
-                <button type="button"
-                    class="text-white bg-primary hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:hover:bg-primary dark:focus:ring-pink-800">Contact
-                    Person</button>
-                <button data-collapse-toggle="navbar-cta" type="button"
-                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200   dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-cta" aria-expanded="false">
+                <a href="#contact">
+                    <div type="button"
+                        class="text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:outline-none focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800">
+                        Order Now</div>
+                </a>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd">
-                        </path>
+                            clip-rule="evenodd"></path>
                     </svg>
                 </button>
             </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul
-                    class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-slate-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li><a href="#home"
-                            class="block py-2 pl-3 pr-4 text-white bg-pink-500 rounded md:bg-transparent md:text-pink-600 font-semibold md:p-0 "
-                            aria-current="page">Home</a></li>
-                    <li><a href="#about"
-                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-white   dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About
+                    class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#home"
+                            class="block py-2 pl-3 pr-4 text-white bg-pink-500 rounded md:bg-transparent md:text-pink-700 md:p-0 dark:text-white"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About
                             Sweetology</a>
                     </li>
-                    <li><a href="#product"
-                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-white   dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Product</a>
+                    <li>
+                        <a href="#product"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Product</a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact
+                            Person</a>
                     </li>
                 </ul>
             </div>
@@ -71,7 +81,7 @@
     <!-- End Navbar -->
 
     <!-- Hero -->
-    <section class="flex flex-wrap justify-center items-center pt-32 pb-48 px-10 lg:px-0" id="home">
+    <section class="flex flex-wrap justify-center items-center py-60 pb-48 px-10 lg:px-0" id="home">
         <div class="container max-w-xl mx-auto rounded-xl">
             <h1
                 class="w-full flex flex-wrap justify-start items-start max-w-xl text-4xl md:text-7xl font-bold my-5 leading-none">
@@ -84,32 +94,38 @@
             <h5 class="w-full flex flex-wrap justify-start items-start max-w-lg my-2 font-normal text-lg">Find
                 Sweetology at :</h5>
             <div class="flex">
-                <div class="flex justify-center items-center bg-pink-200 shadow-xl w-10 h-10 rounded-lg mr-3">
-                    <?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M34 6H14C9.58172 6 6 9.58172 6 14V34C6 38.4183 9.58172 42 14 42H34C38.4183 42 42 38.4183 42 34V14C42 9.58172 38.4183 6 34 6Z"
-                            fill="none" stroke="#ce378a" stroke-width="4" stroke-linejoin="round" />
-                        <path
-                            d="M24 32C28.4183 32 32 28.4183 32 24C32 19.5817 28.4183 16 24 16C19.5817 16 16 19.5817 16 24C16 28.4183 19.5817 32 24 32Z"
-                            fill="none" stroke="#ce378a" stroke-width="4" stroke-linejoin="round" />
-                        <path
-                            d="M35 15C36.1046 15 37 14.1046 37 13C37 11.8954 36.1046 11 35 11C33.8954 11 33 11.8954 33 13C33 14.1046 33.8954 15 35 15Z"
-                            fill="#ce378a" />
-                    </svg>
-                </div>
-                <div class="flex justify-center items-center bg-pink-200 shadow-xl w-10 h-10 rounded-lg mr-3">
-                    <?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect x="10" y="12" width="28" height="30" rx="3" fill="none" stroke="#ce378a" stroke-width="4"
-                            stroke-linejoin="round" />
-                        <path d="M30 18V10C30 6.68629 27.3137 4 24 4V4C20.6863 4 18 6.68629 18 10V18" stroke="#ce378a"
-                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <div class="flex justify-center items-center bg-pink-200 shadow-xl w-10 h-10 rounded-lg mr-3">
-                    <span class="text-xs text-center font-bold text-[#ce378a] leading-none">Grab</span>
-                </div>
+                <a href="https://www.instagram.com/sweetology_st/">
+                    <div class="flex justify-center items-center bg-primary shadow-xl w-10 h-10 rounded-lg mr-3">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M34 6H14C9.58172 6 6 9.58172 6 14V34C6 38.4183 9.58172 42 14 42H34C38.4183 42 42 38.4183 42 34V14C42 9.58172 38.4183 6 34 6Z"
+                                fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round" />
+                            <path
+                                d="M24 32C28.4183 32 32 28.4183 32 24C32 19.5817 28.4183 16 24 16C19.5817 16 16 19.5817 16 24C16 28.4183 19.5817 32 24 32Z"
+                                fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round" />
+                            <path
+                                d="M35 15C36.1046 15 37 14.1046 37 13C37 11.8954 36.1046 11 35 11C33.8954 11 33 11.8954 33 13C33 14.1046 33.8954 15 35 15Z"
+                                fill="#fff" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/sweetology_st/">
+                    <div class="flex justify-center items-center bg-primary shadow-xl w-10 h-10 rounded-lg mr-3">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="12" width="28" height="30" rx="3" fill="none" stroke="#fff" stroke-width="4"
+                                stroke-linejoin="round" />
+                            <path d="M30 18V10C30 6.68629 27.3137 4 24 4V4C20.6863 4 18 6.68629 18 10V18" stroke="#fff"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/sweetology_st/">
+                    <div class="flex justify-center items-center bg-primary shadow-xl w-10 h-10 rounded-lg mr-3">
+                        <span class="text-xs text-center font-bold text-white leading-none select-none">Grab</span>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="container max-w-xl mx-auto rounded-xl">
@@ -406,22 +422,19 @@
                                             fill="currentColor" />
                                     </svg>
                                     <blockquote>
-                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"Lorem, ipsum dolor
-                                            sit
-                                            amet consectetur adipisicing elit. Aspernatur, assumenda! Quis dolores
-                                            molestias esse ipsum, recusandae, non doloremque, dolorem rerum aliquid
-                                            quasi sapiente? Praesentium, nobis ipsa commodi delectus voluptate veniam."
+                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"I've never tasted a
+                                            cake this delicious before! Mile crepe cake is something you should try at
+                                            least once in your life.
+                                            The taste is soft and the sweetness just right makes it one of the best
+                                            cakes I've ever enjoyed."
                                         </p>
                                     </blockquote>
                                     <figcaption class="flex items-center justify-center mt-6 space-x-3">
                                         <img class="w-6 h-6 rounded-full"
-                                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-                                            alt="profile picture">
+                                            src="https://source.unsplash.com/100x100?people" alt="profile picture">
                                         <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                            <div class="pr-3 text-sm font-bold">Micheal Gough
-                                            </div>
-                                            <div class="pl-3 text-sm font-light text-gray-500">CEO at
-                                                Google</div>
+                                            <div class="pr-3 text-sm font-bold">Sophie Patel</div>
+                                            <div class="pl-3 text-sm font-light text-gray-500">Chef</div>
                                         </div>
                                     </figcaption>
                                 </figure>
@@ -439,22 +452,20 @@
                                             fill="currentColor" />
                                     </svg>
                                     <blockquote>
-                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"Lorem, ipsum dolor
-                                            sit
-                                            amet consectetur adipisicing elit. Aspernatur, assumenda! Quis dolores
-                                            molestias esse ipsum, recusandae, non doloremque, dolorem rerum aliquid
-                                            quasi sapiente? Praesentium, nobis ipsa commodi delectus voluptate veniam."
+                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"I was really
+                                            impressed with the mile crepe cake I bought here. Every layer is so thin and
+                                            fluffy, and the combination
+                                            of cream cheese and chocolate flavors is just amazing. I will definitely be
+                                            back to try other flavors!"
                                         </p>
                                     </blockquote>
                                     <figcaption class="flex items-center justify-center mt-6 space-x-3">
                                         <img class="w-6 h-6 rounded-full"
-                                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-                                            alt="profile picture">
+                                            src="https://source.unsplash.com/100x100?women" alt="profile picture">
                                         <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                            <div class="pr-3 text-sm font-bold">Micheal Gough
+                                            <div class="pr-3 text-sm font-bold">Rachel Vennya
                                             </div>
-                                            <div class="pl-3 text-sm font-light text-gray-500">CEO at
-                                                Google</div>
+                                            <div class="pl-3 text-sm font-light text-gray-500">Influencer</div>
                                         </div>
                                     </figcaption>
                                 </figure>
@@ -472,22 +483,19 @@
                                             fill="currentColor" />
                                     </svg>
                                     <blockquote>
-                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"Lorem, ipsum dolor
-                                            sit
-                                            amet consectetur adipisicing elit. Aspernatur, assumenda! Quis dolores
-                                            molestias esse ipsum, recusandae, non doloremque, dolorem rerum aliquid
-                                            quasi sapiente? Praesentium, nobis ipsa commodi delectus voluptate veniam."
+                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"For me, mile crepe
+                                            cake is the perfect cake for any occasion. From weddings to birthdays, or
+                                            even just as an afternoon
+                                            snack, this cake is always the right choice. Every bite brings its own joy."
                                         </p>
                                     </blockquote>
                                     <figcaption class="flex items-center justify-center mt-6 space-x-3">
-                                        <img class="w-6 h-6 rounded-full"
-                                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                        <img class="w-6 h-6 rounded-full" src="https://source.unsplash.com/100x100?girl"
                                             alt="profile picture">
                                         <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                            <div class="pr-3 text-sm font-bold">Micheal Gough
+                                            <div class="pr-3 text-sm font-bold">Lula Lahfah
                                             </div>
-                                            <div class="pl-3 text-sm font-light text-gray-500">CEO at
-                                                Google</div>
+                                            <div class="pl-3 text-sm font-light text-gray-500">Actress</div>
                                         </div>
                                     </figcaption>
                                 </figure>
@@ -505,22 +513,20 @@
                                             fill="currentColor" />
                                     </svg>
                                     <blockquote>
-                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"Lorem, ipsum dolor
-                                            sit
-                                            amet consectetur adipisicing elit. Aspernatur, assumenda! Quis dolores
-                                            molestias esse ipsum, recusandae, non doloremque, dolorem rerum aliquid
-                                            quasi sapiente? Praesentium, nobis ipsa commodi delectus voluptate veniam."
+                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"I highly recommend
+                                            this mile crepe cake to anyone who is looking for a unique and delicious
+                                            cake. The taste is soft and
+                                            the aroma of vanilla really spoils the tongue. Trust me, you will not be
+                                            disappointed with this choice!"
                                         </p>
                                     </blockquote>
                                     <figcaption class="flex items-center justify-center mt-6 space-x-3">
-                                        <img class="w-6 h-6 rounded-full"
-                                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                        <img class="w-6 h-6 rounded-full" src="https://source.unsplash.com/100x100?man"
                                             alt="profile picture">
                                         <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                            <div class="pr-3 text-sm font-bold">Micheal Gough
+                                            <div class="pr-3 text-sm font-bold">Fadil Jaidi
                                             </div>
-                                            <div class="pl-3 text-sm font-light text-gray-500">CEO at
-                                                Google</div>
+                                            <div class="pl-3 text-sm font-light text-gray-500">Content Creator</div>
                                         </div>
                                     </figcaption>
                                 </figure>
@@ -538,22 +544,19 @@
                                             fill="currentColor" />
                                     </svg>
                                     <blockquote>
-                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"Lorem, ipsum dolor
-                                            sit
-                                            amet consectetur adipisicing elit. Aspernatur, assumenda! Quis dolores
-                                            molestias esse ipsum, recusandae, non doloremque, dolorem rerum aliquid
-                                            quasi sapiente? Praesentium, nobis ipsa commodi delectus voluptate veniam."
+                                        <p class="text-md lg:text-2xl font-normal text-gray-900 ">"I have to admit that
+                                            this mile crepe cake is one of the best cakes I've ever made. Every layer
+                                            has to be done with care
+                                            to get the perfect texture, but the end result always makes me proud."
                                         </p>
                                     </blockquote>
                                     <figcaption class="flex items-center justify-center mt-6 space-x-3">
-                                        <img class="w-6 h-6 rounded-full"
-                                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                        <img class="w-6 h-6 rounded-full" src="https://source.unsplash.com/100x100?chef"
                                             alt="profile picture">
                                         <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                            <div class="pr-3 text-sm font-bold">Micheal Gough
+                                            <div class="pr-3 text-sm font-bold">Arnold Poernomo
                                             </div>
-                                            <div class="pl-3 text-sm font-light text-gray-500">CEO at
-                                                Google</div>
+                                            <div class="pl-3 text-sm font-light text-gray-500">Chef</div>
                                         </div>
                                     </figcaption>
                                 </figure>
@@ -568,6 +571,360 @@
         </div>
     </section>
     <!-- End About -->
+
+    <!-- Product Page -->
+    <section class="md:pt-32 pb-48 px-10 lg:px-0" id="product">
+        <div class="container mx-auto w-full h-96">
+            <div class="flex flex-wrap justify-center items-center">
+                <div class="w-full md:w-1/2">
+                    <h1 class="flex max-w-xl justify-start items-start text-2xl lg:text-5xl font-semibold">Long-Lasting
+                        Happiness
+                        With A Bite.</h1>
+                    <a href="#contact">
+                        <div
+                            class="w-36 h-12 mt-5 flex justify-center items-center bg-primary text-white font-semibold rounded-xl">
+                            Order Now</div>
+                    </a>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-end items-end">
+                    <img src="dist/img/product-icon.webp" width="500" height="500" alt="make-it">
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-44 text-center">
+            <h1 class="font-bold text-3xl my-10">Our Product</h1>
+            <div class="card flex flex-wrap lg:grid lg:grid-cols-5 lg:gap-4">
+                <div
+                    class="w-full mt-5 max-w-xs rounded-xl bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#product">
+                        <img class="rounded-t-xl mb-5" src="dist/img/card-product/product (1).svg" width="500"
+                            height="500" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-2xl text-left font-semibold tracking-tight my-5">Sweetology
+                                <span class="block text-xl">Strawberry Miles Cake 🍓</span>
+                            </h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>First star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Second star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Third star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Fourth star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <span
+                                class="bg-pink-100 text-pink-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-pink-200 dark:text-pink-800 ml-3">4.0
+                                | Terjual 100x</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-5">
+                            <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp20.000</span>
+                            <a href="#"
+                                class="text-white bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800">Buy
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full mt-5 max-w-xs rounded-xl bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#product">
+                        <img class="rounded-t-xl mb-5" src="dist/img/card-product/product (2).svg" width="500"
+                            height="500" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-2xl text-left font-semibold tracking-tight my-5">Sweetology
+                                <span class="block text-xl">Chocolate Miles Cake 🍫</span>
+                            </h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>First star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Second star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Third star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Fourth star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <span
+                                class="bg-pink-100 text-pink-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-pink-200 dark:text-pink-800 ml-3">4.0
+                                | Terjual 100x</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-5">
+                            <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp20.000</span>
+                            <a href="#"
+                                class="text-white bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800">Buy
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full mt-5 max-w-xs rounded-xl bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#product">
+                        <img class="rounded-t-xl mb-5" src="dist/img/card-product/product (3).svg" width="500"
+                            height="500" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-2xl text-left font-semibold tracking-tight my-5">Sweetology
+                                <span class="block text-xl">Chocolate Miles Cake 🍫</span>
+                            </h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>First star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Second star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Third star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Fourth star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <span
+                                class="bg-pink-100 text-pink-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-pink-200 dark:text-pink-800 ml-3">4.0
+                                | Terjual 100x</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-5">
+                            <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp20.000</span>
+                            <a href="#"
+                                class="text-white bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800">Buy
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full mt-5 max-w-xs rounded-xl bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#product">
+                        <img class="rounded-t-xl mb-5" src="dist/img/card-product/product (4).svg" width="500"
+                            height="500" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-2xl text-left font-semibold tracking-tight my-5">Sweetology
+                                <span class="block text-xl">Chocolate Miles Cake 🍫</span>
+                            </h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>First star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Second star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Third star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Fourth star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <span
+                                class="bg-pink-100 text-pink-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-pink-200 dark:text-pink-800 ml-3">4.0
+                                | Terjual 100x</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-5">
+                            <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp20.000</span>
+                            <a href="#"
+                                class="text-white bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800">Buy
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full mt-5 max-w-xs rounded-xl bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#product">
+                        <img class="rounded-t-xl mb-5" src="dist/img/card-product/product (5).svg" width="500"
+                            height="500" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-2xl text-left font-semibold tracking-tight my-5">Sweetology
+                                <span class="block text-xl">Chocolate Miles Cake 🍫</span>
+                            </h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>First star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Second star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Third star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Fourth star</title>
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <span
+                                class="bg-pink-100 text-pink-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-pink-200 dark:text-pink-800 ml-3">4.0
+                                | Terjual 100x</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-5">
+                            <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp20.000</span>
+                            <a href="#"
+                                class="text-white bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800">Buy
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Product Page -->
+
+    <!-- Contact -->
+    <section id=contact class="lg:pt-36">
+        <!-- component -->
+        <section class="text-gray-600 body-font relative">
+            <div class="absolute inset-0">
+                <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map"
+                    scrolling="no"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.87548479454705!2d106.87694690373813!3d-6.2627074912206115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f399111aa4fb%3A0x8ce3915784025c6a!2sFamily%20RO%20(%20Air%20Minum%20Isi%20Ulang%20)!5e0!3m2!1sen!2sus!4v1674370805422!5m2!1sen!2sus">
+                </iframe>
+            </div>
+            <div class="container px-5 py-24 mx-auto flex">
+                <div
+                    class="lg:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+                    <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Mailbox 💌</h2>
+                    <p class="leading-relaxed mb-5 text-gray-600">You can send a message to our email address, we will
+                        respond to you as soon as possible, thank you.
+                    </p>
+                    <form target="_blank" action="https://formsubmit.co/alfirnab12@gmail.com" method="POST">
+                        <div class="relative mb-4">
+                            <label for="email" class="leading-7 text-sm">Name</label>
+                            <input type="text" name="name" id="name"
+                                class="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="email" class="leading-7 text-sm">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="message" class="leading-7 text-sm">Message</label>
+                            <textarea type="text" id="message" name="message"
+                                class="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                        <button
+                            class="text-white bg-primary border-0 w-full py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white dark:bg-[#080E16] shadow px-6 py-8">
+        <h5 class="font-bold text-sm text-center">&copy; Copyright <span id=copyright></span>
+            <a href=http://galihazellaa.vercel.app/ class=hover:underline> Galih Azella Firdaus</a>. All Rights
+            Reserved.
+        </h5>
+        <p class="flex justify-center font-normal text-sm text-center"><a href=https://tailwindcss.com>Made with <span
+                    class=font-bold>Tailwind CSS</span>
+            </a>
+            <span>
+                <svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class="fill-sky-400 w-5 h-5 mx-2">
+                    <title>Tailwind CSS</title>
+                    <path
+                        d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+                </svg>
+            </span>
+        </p>
+    </footer>
+    <!-- Akhir Footer -->
 
     <!-- JS -->
     <script src="dist/js/script.js"></script>

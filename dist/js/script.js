@@ -19,9 +19,7 @@ window.onscroll = function () {
 var swiper = new Swiper('.mySwiper', {
   slidesPerView: 1,
   spaceBetween: 30,
-  keyboard: {
-    enabled: true,
-  },
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -31,3 +29,6 @@ var swiper = new Swiper('.mySwiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+// Copyright
+document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
